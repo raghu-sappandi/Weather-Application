@@ -1,0 +1,94 @@
+
+.container{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 500px;
+    padding: 20px;
+    font-family: Arial,sans-serif;
+    overflow-y: hidden;
+    border-radius: 30px;
+   
+    
+}
+
+
+.inputContainer{
+    margin-bottom: 20px;
+    width: 70%;
+}
+.input {
+    display: block;
+    width: 100%;               /* Full-width input */
+    padding: 0.375rem 0.75rem; /* Vertical and horizontal padding */
+    font-size: 1rem;           /* Base font size */
+    line-height: 1.5;          /* Adjust line height */
+    color: #495057;            /* Bootstrap's default text color */
+    background-color: #fff;    /* White background */
+    background-clip: padding-box; /* Ensure padding applies correctly */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 0.25rem;    /* Rounded corners */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); /* Inner shadow */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transitions */
+}
+
+.input:focus {
+    color: #495057;              /* Keep text color consistent */
+    background-color: gainsboro;      /* Maintain white background */
+    border-color: #80bdff;       /* Blue border on focus */
+    outline: 0;                  /* Remove default outline */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap-style focus shadow */
+}
+
+.button{
+    padding: 10px 106px;
+    font-size: 16px;
+    background-color: #005f75;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.button:hover{
+    background-color: #fff;
+    color: #005f75;
+   
+}
+.weatherContainer{
+    margin-bottom: 20px;
+    text-align: center;
+    
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px); /* Apply blur effect */
+      -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    padding: 10px;
+    
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.temperature{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.error{
+    color: red;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px); /* Apply blur effect */
+      -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+}

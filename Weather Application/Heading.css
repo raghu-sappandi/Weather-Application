@@ -1,0 +1,74 @@
+body{
+   
+    background: url("weather.webp")no-repeat center center;
+    background-size: cover;
+   
+    backdrop-filter: blur(2px);
+}
+.weather-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    
+    font-family: 'Courier New', Courier, monospace;
+    animation: changeSeason 20s infinite;
+  }
+
+  .weather-title::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeInOut 20s infinite;
+  }
+
+  /* Seasons animations */
+  .weather-title::before {
+    animation-delay: 0s;
+  }
+
+  .weather-title::after {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: #28a745; /* Spring Color */
+    animation: fadeInOut 20s infinite;
+    animation-delay: 5s;
+  }
+
+  @keyframes fadeInOut {
+    0%, 25%, 100% {
+      opacity: 0;
+    }
+    12.5%, 37.5% {
+      opacity: 1;
+    }
+  }
+
+  /* Keyframes for changing the title with seasons */
+  @keyframes changeSeason {
+    0%, 25% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      color: #fff;
+    }
+    75% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .weather-title {
+    font-size: 2rem;
+    color: #f57c00;
+  }
